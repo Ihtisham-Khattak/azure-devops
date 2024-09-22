@@ -3,10 +3,10 @@
 
 name: node-cli-example
 
-on: 
+on:
   push:
     branches: [main]
-  pull_request: 
+  pull_request:
     branches: [main]
 
 jobs:
@@ -16,11 +16,8 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Checkout Node Version
-        run: echo "Hello World"
-      
-      - name: list down file
-        run: ls
-      
-  
-  
+      - name: Pipe Command for all the SUBJECTS
+        run: |
+          echo "Hello World"
+          ls -ltrs
+          cat README.md
