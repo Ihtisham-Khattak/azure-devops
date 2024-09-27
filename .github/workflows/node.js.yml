@@ -21,3 +21,7 @@ jobs:
           echo "Hello World"
           ls -ltrs
           cat README.md
+
+      - name: CowSays Print ASCII code
+        run: echo cowsays -f dragon 
+
